@@ -1,0 +1,22 @@
+#crauser {
+  width: 100%;
+  position: relative;
+}
+#crauser > img {
+  width: 100%;
+}
+#leftBtn,
+#rightBtn {
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  background-color: rgba(100, 100, 100, 0.5);
+  color: whitesmoke;
+  border: none;
+}
+button:nth-child(2) {
+  left: 10px;
+}
+button:nth-child(3) {
+  right: 20px;
+}
