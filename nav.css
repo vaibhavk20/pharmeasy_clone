@@ -3,9 +3,8 @@ nav {
   background-color: rgb(12, 131, 125);
   display: grid;
   grid-template-columns: 10% 80%;
-  font-family: sans-serif;
   justify-content: space-between;
-  /* position: sticky; */
+  font-family: "Poppins", sans-serif;
 }
 nav > div > img {
   width: 100%;
@@ -27,6 +26,7 @@ nav > div > img {
   align-items: center;
   border: 1px dotted;
   background: white;
+  font-family: "Poppins", sans-serif;
 }
 #slogo {
   width: 40px;
@@ -39,6 +39,7 @@ input {
   border: none;
   font-size: 15px;
   outline: none;
+  font-family: "Poppins", sans-serif;
 }
 input {
   width: 650px;

@@ -1,0 +1,47 @@
+#footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 25px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  background: #f4f7fb;
+}
+#bottomFooter {
+  width: 100%;
+  margin: auto;
+}
+#ptnr {
+  display: flex;
+  justify-content: space-between;
+}
+
+#upperFooter {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#upperFooter > div {
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin-top: -10px;
+}
+#upperFooter h3 {
+  margin-left: 40px;
+}
+h3 {
+  color: rgb(79, 88, 104);
+}
+#socialPic {
+  margin-left: 40px;
+  display: flex;
+  gap: 30px;
+}
+#socialPic > img {
+  width: 10%;
+}
