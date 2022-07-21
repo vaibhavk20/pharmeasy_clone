@@ -1,6 +1,7 @@
 #crauser {
   width: 100%;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 #crauser > img {
   width: 100%;

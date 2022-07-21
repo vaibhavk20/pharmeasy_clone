@@ -5,6 +5,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-content: space-between;
+  font-family: "Poppins", sans-serif;
 }
 
 #serviceTab > div {

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTPCR</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style>
+      #rtpcr {
+        height: auto;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
+        color: gray;
+        font-family: "Poppins", sans-serif;
+      }
+      #leftSide {
+        width: 50%;
+      }
+      #leftSide > div {
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-radius: 5px;
+      }
+      #logo {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .smallFont {
+        font-size: 12px;
+      }
+      #select {
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(16, 132, 126);
+        color: white;
+        border: none;
+      }
+      #rightSide {
+        margin: auto;
+        margin-right: 50px;
+      }
+      #cart {
+        padding: 10px 100px;
+        border-radius: 10px;
+        background-color: rgb(16, 132, 126);
+        color: white;
+        border: none;
+      }
+    </style>
+
+    <style>
+      #alert {
+        width: 40%;
+        margin-left: 130px;
+        margin-top: 20px;
+        background-color: rgb(255, 248, 218);
+        color: rgb(252, 128, 25);
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+      }
+      #testReq {
+        width: 80%;
+        margin: auto;
+        color: gray;
+        font-family: "Poppins", sans-serif;
+      }
+      .bold {
+        font-weight: bold;
+        color: black;
+      }
+      #infoTab {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        color: gray;
+        font-family: "Poppins", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        color: rgb(79, 88, 104);
+      }
+    </style>
+
+    <style>
+      #playstore {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        font-family: "Poppins", sans-serif;
+      }
+      #mobile {
+        width: 30%;
+      }
+
+      #mobile > img {
+        width: 100%;
+      }
+      #downicon {
+        margin-left: 100px;
+        color: gray;
+      }
+      .app {
+        width: 40%;
+        height: 60px;
+        display: flex;
+        background-color: gray;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .app > img {
+        width: 30%;
+        height: 50%;
+        margin-right: 5px;
+      }
+      #app {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <div>
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <!-- search bar -->
+        <div class="hero">
+          <div id="box">
+            <select name="" id="">
+              <option>Select Pincode</option>
+            </select>
+            <input
+              type="text"
+              id="search"
+              placeholder="Search medicins/HealthCare Products"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/7422/7422427.png"
+              alt=""
+              id="slogo"
+            />
+          </div>
+        </div>
+        <!-- links -->
+        <div>
+          <div id="links">
+            <div id="tab">
+              <a href="">Order Medicines</a>
+              <a href="">HealthCare Products</a>
+              <a href="">Lab Testes</a>
+              <a href="">RTPCR</a>
+            </div>
+            <div id="credentials">
+              <a href="">
+                <!-- <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt=""> -->
+                <span>Offers</span>
+              </a>
+              <a href="">Login / Signup</a>
+              <a href="">Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- rtpcr -->
+    <div id="rtpcr">
+      <div id="leftSide">
+        <h1>Test Details</h1>
+        <div>
+          <div id="logo">
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1>Covid-19 RTPCR (coronavirus SARS-CoV2)</h1>
+            <p class="smallFont">Available at 1 certified lab</p>
+            <h1>₹ 700 <span class="smallFont">onwards</span></h1>
+            <button id="select">Select</button>
+          </div>
+        </div>
+      </div>
+      <div id="rightSide">
+        <p>Please select a test to proceed</p>
+        <button id="cart">View Cart</button>
+      </div>
+    </div>
+
+    <div id="alert">
+      <p>
+        The COVID-19 laboratory test can detect positive coronavirus cases. Any
+        individual with symptoms like cough, high fever, shortness of breath,
+        respiratory and breathing difficulties, and with a history of
+        international travel or contact with Covid -19 +ve
+      </p>
+    </div>
+    <div id="testReq">
+      <h3>Test Requirement</h3>
+      <p>Sample Type: <span class="bold">Throat and Nasal Swab</span></p>
+      <p>Fasting Required: <span class="bold">Not Required</span></p>
+      <p>Tube Type: <span class="bold">Plain</span></p>
+    </div>
+
+    <!-- info tabs -->
+    <div id="infoTab">
+      <div>
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/9407515b.svg?dim=0x72&dpr=1&q=100"
+          alt=""
+        />
+        <h2>Trusted Labs</h2>
+        <p>
+          Every test booked via PharmEasy is conducted by certified labs that
+          are 100% verified and trustworthy.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/0105ddc1.svg?dim=0x72&dpr=1&q=100"
+          alt=""
+        />
+        <h2>Home Visit</h2>
+        <p>
+          With PharmEasy, you get a FREE sample pick-up* by professional
+          phlebotomists from your home or preferred location.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/fc71c500.svg?dim=0x72&dpr=1&q=100"
+          alt=""
+        />
+
+        <h2>Timely and Accurate Reports</h2>
+        <p>
+          Once collected, samples will be sent to labs for processing. Detailed
+          reports will be shared within a stipulated timeline.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/4a11ac5a.svg?dim=0x72&dpr=1&q=100"
+          alt=""
+        />
+
+        <h2>Up to 70% OFF</h2>
+        <p>
+          At PharmEasy, you save at every step! On diagnostic tests, get up to
+          70% OFF on various tests and test packages.
+        </p>
+      </div>
+    </div>
+    <!-- playStore -->
+    <div id="playstore">
+      <div id="mobile">
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg"
+          alt=""
+        />
+      </div>
+      <div id="downicon">
+        <h1>Download the App for Free</h1>
+        <div id="app">
+          <div class="app">
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png"
+              alt=""
+            />
+            <p>Play Store</p>
+          </div>
+          <div class="app">
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png"
+              alt=""
+            />
+            <p>Apple Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+      <div id="upperFooter">
+        <div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Partner with PharmEasy</li>
+              <li>Sell at PharmEasy</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Our Services</h3>
+            <ul>
+              <li>Order Medicine</li>
+              <li>Healthcare Products</li>
+              <li>Lab Tests</li>
+              <li>Find Nearest Collection Centre</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Featured Categories</h3>
+          <ul>
+            <li>Covid Essentials</li>
+            <li>Personal Care</li>
+            <li>Ayurvedic Care</li>
+            <li>Sexual Wellness</li>
+            <li>Fitness & Supplements</li>
+            <li>Mother and Baby Care</li>
+            <li>Healthcare Devices</li>
+            <li>Health Condition</li>
+            <li>Diabetic Care</li>
+            <li>Value Store</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <h3>Need Help</h3>
+            <ul>
+              <li>Browse All Medicines</li>
+              <li>Browse All Molecules</li>
+              <li>Browse All Cities & Areas</li>
+              <li>Browse All Stores</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Policy Info</h3>
+            <ul>
+              <li>Editorial Policy</li>
+              <li>Privacy Policy</li>
+              <li>Vulnerability Disclosure Policy</li>
+              <li>Terms and Conditions</li>
+              <li>Customer Support Policy</li>
+              <li>Return Policy</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>FOLLOW US</h3>
+          <div id="socialPic">
+            <img
+              src="https://img.icons8.com/small/452/instagram-new.png"
+              alt=""
+            />
+            <img
+              src="https://img.icons8.com/small/452/facebook-new.png"
+              alt=""
+            />
+            <img
+              src="https://img.icons8.com/small/2x/youtube-play.png"
+              alt=""
+            />
+            <img src="https://img.icons8.com/small/452/twitter.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="bottomFooter">
+        <h3>Our Payment Partners</h3>
+        <div id="ptnr">
+          <div>
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"
+              alt=""
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg"
+              alt=""
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg"
+              alt=""
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg"
+              alt=""
+            /><img
+              src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg"
+              alt=""
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg"
+              alt=""
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg"
+              alt=""
+            /><img
+              src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg"
+              alt=""
+            />
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p>© 2022 PharmEasy. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
