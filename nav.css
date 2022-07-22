@@ -5,6 +5,8 @@ nav {
   grid-template-columns: 10% 80%;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
+  position: sticky;
+  top: 0px;
 }
 nav > div > img {
   width: 100%;
