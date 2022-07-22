@@ -4,95 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RTPCR</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <style>
-      #rtpcr {
-        height: auto;
+      #cartPage {
         width: 80%;
         margin: auto;
+        margin-top: 50px;
         display: flex;
-        margin-top: 20px;
-        color: gray;
+        gap: 20px;
         font-family: "Poppins", sans-serif;
+        color: rgb(16, 132, 126);
       }
-      #leftSide {
-        width: 50%;
+      #cartPage > div {
+        height: 100%;
       }
-      #leftSide > div {
-        display: flex;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-        border-radius: 5px;
+      #leftside {
+        width: 60%;
+      }
+      #rightside {
+        width: 40%;
+      }
+      #leftside > div {
+        width: 100%;
+      }
+      #leftside > div > img {
+        width: 100%;
       }
       #logo {
         margin-top: 30px;
         margin-left: 20px;
         margin-right: 20px;
       }
-      .smallFont {
-        font-size: 12px;
-      }
-      #select {
-        padding: 10px 30px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        background-color: rgb(16, 132, 126);
-        color: white;
-        border: none;
-      }
-      #rightSide {
-        margin: auto;
-        margin-right: 50px;
-      }
-      #cart {
-        padding: 10px 100px;
-        border-radius: 10px;
-        background-color: rgb(16, 132, 126);
-        color: white;
-        border: none;
-      }
-      #adjust {
+      .adjust {
         display: flex;
-        margin: auto;
+        justify-content: space-between;
       }
-    </style>
-
-    <style>
-      #alert {
-        width: 40%;
-        margin-left: 130px;
+      #cartleftside {
+        display: flex;
+      }
+      #mycount {
         margin-top: 20px;
-        background-color: rgb(255, 248, 218);
-        color: rgb(252, 128, 25);
-        font-size: 18px;
-        font-family: "Poppins", sans-serif;
+        margin-right: 20px;
+        border-radius: 10px;
+        cursor: pointer;
       }
-      #testReq {
-        width: 80%;
+      #del {
+        margin-right: 60px;
+        cursor: pointer;
+      }
+      .dottedLine {
+        border: 1px dotted;
+        border-radius: 10px;
+      }
+      #rightside {
+        margin-left: 40px;
+      }
+      #details {
+        padding: 0px 100px;
         margin: auto;
-        color: gray;
-        font-family: "Poppins", sans-serif;
-      }
-      .bold {
-        font-weight: bold;
-        color: black;
-      }
-      #infoTab {
-        width: 80%;
-        margin: auto;
-        margin-top: 50px;
-        display: flex;
-        gap: 20px;
-        color: gray;
-        font-family: "Poppins", sans-serif;
-      }
-      h1,
-      h2,
-      h3 {
-        color: rgb(79, 88, 104);
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: rgb(16, 132, 126);
+        color: white;
       }
     </style>
 
@@ -137,9 +114,25 @@
       }
     </style>
 
-    <link rel="stylesheet" href="footer.css" />
+    <style>
+      #infoTab {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        color: gray;
+        font-family: "Poppins", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        color: rgb(79, 88, 104);
+      }
+    </style>
   </head>
   <body>
+    <!-- navbar -->
     <nav>
       <!-- logo -->
       <div>
@@ -174,7 +167,7 @@
               <a href="">Order Medicines</a>
               <a href="">HealthCare Products</a>
               <a href="">Lab Testes</a>
-              <a href="">RTPCR</a>
+              <a href="rtpcr.html">RTPCR</a>
             </div>
             <div id="credentials">
               <a href="">
@@ -182,18 +175,24 @@
                 <span>Offers</span>
               </a>
               <a href="">Login / Signup</a>
-              <a href="cart.html">Cart</a>
+              <a href="">Cart</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- rtpcr -->
-    <div id="rtpcr">
-      <div id="leftSide">
-        <h1>Test Details</h1>
+    <!-- cart part -->
+    <div id="cartPage">
+      <div id="leftside">
+        <h2>Lab Tests Cart</h2>
         <div>
+          <img
+            src="https://assets.pharmeasy.in/diag-pwa/assets/NewMPCartBanner.jpg"
+            alt=""
+          />
+        </div>
+        <div id="cartleftside">
           <div id="logo">
             <img
               src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg"
@@ -202,36 +201,55 @@
           </div>
           <div>
             <h1 id="testId">Covid-19 RTPCR (coronavirus SARS-CoV2)</h1>
-            <p class="smallFont">Available at 1 certified lab</p>
-            <div id="adjust">
-              <h1>₹</h1>
-              <h1 id="rupee">700</h1>
-              <!-- <span class="smallFont">onwards</span> -->
+            <div class="adjust">
+              <p class="smallFont">Available at 1 certified lab</p>
+              <img
+                id="del"
+                src="https://assets.pharmeasy.in/diag-pwa/assets/trashCan.svg"
+                alt=""
+              />
             </div>
-            <button id="select">Select</button>
+            <div class="adjust">
+              <div class="adjust">
+                <h1>₹</h1>
+                <h1 id="rupee">700</h1>
+                <!-- <span class="smallFont">onwards</span> -->
+              </div>
+              <div>
+                <select name="" id="mycount">
+                  <option value="">Book For</option>
+                  <option value="1">1 Patients</option>
+                  <option value="2">2 Patients</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="rightSide">
-        <p id="testName">Please select a test to proceed</p>
-        <p id="testRupee"></p>
-        <button id="cart">View Cart</button>
+      <div id="rightside">
+        <div id="details">
+          <h4>Add Patients Details</h4>
+        </div>
+        <div class="adjust">
+          <p>Cart Value</p>
+          <p id="cartRupee">0</p>
+        </div>
+        <div class="adjust">
+          <p>Sample Collection Charges</p>
+          <p><s>₹ 250.00 </s>Free</p>
+        </div>
+        <div class="adjust">
+          <p>Order total</p>
+          <p id="orderRupee">0</p>
+        </div>
+        <div class="adjust">
+          <h4>Amount Payable</h4>
+          <h4 id="payRupee">0</h4>
+        </div>
+        <div class="dottedLine">
+          <p>Total Savings of ₹250.00 on this order</p>
+        </div>
       </div>
-    </div>
-
-    <div id="alert">
-      <p>
-        The COVID-19 laboratory test can detect positive coronavirus cases. Any
-        individual with symptoms like cough, high fever, shortness of breath,
-        respiratory and breathing difficulties, and with a history of
-        international travel or contact with Covid -19 +ve
-      </p>
-    </div>
-    <div id="testReq">
-      <h3>Test Requirement</h3>
-      <p>Sample Type: <span class="bold">Throat and Nasal Swab</span></p>
-      <p>Fasting Required: <span class="bold">Not Required</span></p>
-      <p>Tube Type: <span class="bold">Plain</span></p>
     </div>
 
     <!-- info tabs -->
@@ -313,7 +331,6 @@
     </div>
 
     <!-- footer -->
-
     <div id="footer">
       <div id="upperFooter">
         <div>
@@ -443,4 +460,4 @@
   </body>
 </html>
 
-<script src="rtpcr.js"></script>
+<script src="cart.js"></script>
