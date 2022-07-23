@@ -59,16 +59,16 @@
         />
       </div>
       <p>Enter OTP sent to +91 <span id="entrOTP"></span></p>
-      <form>
-        <input type="number" id="1" />
-        <input type="number" id="2" />
-        <input type="number" id="3" />
-        <input type="number" id="4" />
+      <form action="javascript:check()">
+        <input type="number" id="one" />
+        <input type="number" id="two" />
+        <input type="number" id="three" />
+        <input type="number" id="four" />
         <div id="resendotp">
           <p>Change Number</p>
           <p>Resend OTP</p>
         </div>
-        <input id="otp" type="submit" value="Send OTP" />
+        <input id="otp" type="submit" value="Send OTP"/>
       </form>
       
   </body>
@@ -77,13 +77,22 @@
   let mobile = localStorage.getItem("mobile");
   document.querySelector("#entrOTP").innerText = mobile;
 
-  let d1 = document.querySelector("#1").value
-  let d2 = document.querySelector("#2").value
-  let d3 = document.querySelector("#3").value
-  let d4 = document.querySelector("#4").value
+  document.querySelector("form").addEventListener("submit",submitOTP);
+
+  let login 
+  function submitOTP(){
+    let d1 = document.querySelector("#one").value
+  let d2 = document.querySelector("#two").value
+  let d3 = document.querySelector("#three").value
+  let d4 = document.querySelector("#four").value
 
   if(d1=="1" && d2=="2" && d3=="3" && d4=="4"){
     alert("Login Successful")
+    let f = document.querySelector("form")
+    f.setAttribute("action","cart.html")
   }
-  
+  else{
+    alert("Enter valid OTP")
+  }
+  }
 </script>
